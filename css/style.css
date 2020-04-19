@@ -1,0 +1,389 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+														/* reset style for browsers, which means it will make my website look the same in every
+														   browser by reseting all their styles to null */ 				
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* For Desktop */ 
+
+
+/* navigation */
+
+
+nav {								/* setting the background color and font size */
+	overflow:hidden;				/* this will hide the content of nav if it exceeds the size of its element`s box */  
+	background-color:#3d362a;
+	font-size:1.25em;
+	position:relative;		/* this will make the nav bar to be adjusted away from its normal position by setting top, right, bottom and left properties*/
+}
+
+nav ul{
+	padding-left:2.22222222%;
+}
+
+nav ul li a{					/* setting the background color, font color, padding and font size */
+	display:block;			   /* this will display an element as a block element taking up the whole width */
+	background-color:#3d362a;
+	color:#a9a9a9;
+	padding:1.11111111% 1.11111111% 1.11111111% 1.11111111%;
+	font-weight:bold;
+	font-size:0.75em;
+	float:left;				 /* this will float the element to the left of its container */
+	text-decoration:none;    /* this will remove the underline and represent the text as default */
+}
+nav ul li a:hover{			/* hover means when you move cursor over the href attribute, it will define the settings as mentioned below */ 
+	background-color:#00ffff;  
+	color:#292929;
+}
+
+
+
+/* body */
+
+#page {								/* this is a page wrapper */
+	max-width:90%;					/* max-width means maximum width of an element, the value of width will not exceed from its max-width */ 	
+	background-color:#6E6E6E;		/* settings of background color, margin and padding */
+	margin:0 auto;
+	padding:0;	
+}
+body {
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;   /* if the browser does not support the first font, it will try the next one */
+	background:#6E6E6E;	
+	margin:0 0 1em 0;						/* margin pattern goes from top, right, bottom to left */
+}
+header img{							
+	width:100%;							/* setting header image width to 100% */
+	position:relative;					/* this will make its position relative to its normal position */
+	height:18em;						
+}
+#page header nav{					/* header navigation bar moving from bottom */
+	bottom:1.2em; 	
+}
+#page h1{						/* this is article heading of all pages except home page */
+		margin:0;
+		font-size:2em;
+		color:white;
+}
+header h1{					/* header text of home page */		
+	color:white;
+	font-size:2.5em;
+	padding:.2em;
+	margin:0 auto;
+	font-weight:bold;
+	position:absolute;			/* this will make the position relative to its nearest positioned ancestor, which is "header img" */ 
+	top:.2em;					/* then moving it form top */
+}
+span{							/* span will add a hook to a part of a header main text to style it */
+	color:gray;
+}
+.lastLine{						/* this is last line of header main text */
+	font-weight:normal;
+}
+#content{						/* this is a body content */
+	margin:2em auto;			/* settings of content margin, width and padding */
+	width:100%;					/* body content is taking 100% width in its container which is 90% */
+	padding:0;
+}
+#content article{			
+	width:90%;					/* article is taking 90% width in its 100% width container */ 
+	margin:1em 0 5em 3.5em;		
+	padding:0;
+	float:left;					/* this will make the article on every page float to left, unless if changed later */
+}
+#content img{				
+	float: right;				/* this float the image to the right of the article with 60% width */
+    width:60%;
+	margin:2.1em;
+    padding:.2em;
+    border: 1px solid #6E6E6E;
+	box-shadow:10px 10px 10px #292929; /* this attaches shadows to the image */ 
+}
+.img{						/* a class of image on all pages apart from home page */
+	position:relative;		/* this will make its position relative for .caption */
+}
+.caption{
+	position:absolute;		/* this will make its position relative to its nearest positioned ancestor which is .img */
+	top:20em;               /* moving it from top and right to the center */
+	right:7.8em;	
+}
+#content h2{				/* this defines the home page article heading */
+	margin:0 0 1em 0;
+	font-size:2em;
+	font-weight:bold;
+	color:#a9a9a9;	 
+}
+#content h2 a{				/* article heading is href attributed */
+	color:#a9a9a9;
+	text-decoration:none;	/* it doesnt have underline */
+}
+#content h2 a:hover{		/* its hover attributed with defined color */
+	color:#292929;
+}
+#content p{					/* this is home page paragraph settings */
+	line-height:1.5em;		/* this defines line space */	
+	color:black;
+	margin:2em 2em 0 0;	
+}
+#content p a{				/* href attributed paragraph settings */ 
+	color:#a9a9a9;
+	text-decoration:none;
+}
+#content p a:hover{
+	color:#00ffff;
+}
+
+/* sidebar with two colums */	
+#sidebar{
+	width:90%;	/* sidebar is taking full width of its container */
+	margin:auto;
+	padding:0;
+}
+#sidebar .col-1{	/* EearlyLife.html */
+	width:45%;		/* 45 + 45 = 90 , which is the total width of page */
+	float:right;
+}
+#sidebar .col-1 a:hover{	/* the whole paragraph has href and also hover attributed with black color */
+	color:black;
+}
+#sidebar .col-1 a{
+	text-decoration:none;
+}
+#sidebar p{
+	margin:0 1em 1em 1.2em; 
+	line-height:1.5em;
+}
+#sidebar .col-2{	/* Awards.html */
+	width:45%;		/* both colums with 45% width and floating side by side */
+	float:left;
+}
+#sidebar .col-2 a:hover{	/* the whole paragraph has href and also hover attributed with black color */
+	color:black;
+}
+#sidebar .col-2 a{
+	text-decoration:none;
+}	
+#sidebar a{				
+	color:#a9a9a9;
+}
+#sidebar h3{		/* both colums have same heading tag */		
+	font-size:1.1em;
+	background:#3d362a;
+	text-align:center;
+	padding:.5em;
+	margin:.5em .5em .5em .5em;
+}
+
+/* footer */
+footer{
+    clear:both;		/* floating elements will not float on either side of footer */
+    padding:24px 48px;
+	background:#3d362a;
+}
+footer ul{
+    font-size: .875em;
+    text-align: center;	
+}
+footer ul li{
+    display: inline;	/* this will display list as default value. height and width properties will have no effect */
+}
+footer ul li a {		/* margin, text and color property settings of list href attribute */
+	margin: 0 .5em;
+	text-decoration:none;
+	color:#a9a9a9;
+}
+footer ul li a:hover{	/* list href hover attribute, this will apply an underline and color */
+	text-decoration:underline;
+	color:#00ffff;
+}
+
+	.biography #page #content p{	/* Biography.html paragraph */
+		color:white;
+	}
+	.biography #page footer{	
+		margin:0;
+	}	
+	.mypic{						/* Biography.html article image */
+		width:38em;
+		float:right;
+	}
+	.quote{					/* class of blockquote */	
+		width:87%;		
+		font-style:italic;
+		text-align:center;
+		margin:2em 0 2em 0;
+		padding:2em;
+		border-top:2px solid #a9a9a9;
+		border-bottom:2px solid #a9a9a9;
+	}
+	.childhood #page #content{  /* EearlyLife.html content margin and padding settings */
+		margin:4em auto;
+		padding:0;
+	}
+	.Awards #page #content ul{	/* Awards.html bullet points */
+		list-style:disc;
+	}
+	.Awards #content ul{		/* line space for unordered list in Awards.html */
+		line-height:1.5em;
+	}
+	.Life #page #content a img{ /* Life.html content image with href attribute */ 
+		float:none;
+		margin:1em auto;
+	}
+	.Contact #content form{		
+		line-height:2em;
+		margin:5em 0 0 0;
+	}
+	.Contact #content form textarea{	/* this is the width adjustment of text area for contact page */
+		width:100%;
+	}
+	
+/* media queries */
+@media screen and (min-width:900px){  /* this means when the page width goes larger than 900px, it will remain 900px of width  */ 
+	#page{
+		width:900px;
+		}
+	}
+
+	
+/* For Tablets */						
+@media screen and (max-width:768px){	/* this means when the page width goes smaller than 768px, the following changes will apply  */
+	.img{		/* images with caption only will have 90% of width */			
+		width: 90%;
+		margin:2em;
+		text-align: center;
+		}
+	.caption{
+		right:2.9em;	
+		}
+	.biography #page #content .mypic{ /* image on biography page will have the following changes */
+		width:26em;
+		}
+	}
+
+	
+/* For Mobile Phones */ 
+@media screen and (max-width:425px){ /* this means when page width goes smaller than 425px, the following changes will apply */
+	#page{				
+		width:100%;			
+		}
+	header img{
+		height:15em;
+		}
+	header h1{
+		font-size:2.4em;
+		max-width:100%;
+		}
+	#page nav ul li a{
+		width:100%;
+		border:1px solid black;
+		margin:0 0 0 .5em;
+		text-align:center;
+		padding:.5em .85em .5em 0;
+		position:relative;
+		right:.99em;   
+		}	
+	#page #content h1{
+		text-align:center;
+		margin:1.5em 0 1.5em 0;
+		}
+	.biography #page #content .mypic{  /* image centered */
+		float:none;
+		max-width:100%; 
+		}
+	#content h2{
+		text-align:center;
+		margin:0 0 1em 0 ;
+		}
+	#content img{	/* images on all pages are centeredd and box shadow removed  */
+		width:100%;
+		float:none;
+		margin:0 0 2em 0;
+		box-shadow:none;
+		}
+	.img{
+		right:1.2em;
+		}
+	.caption{
+		width:100%;
+		top:19em;
+		left:.1em;
+		}
+	#content article{
+		width:100%;
+		float:none;
+		margin:.2em 0 4em 0;
+		}
+	#content article p{
+		margin:.5em; 
+		}
+	.quote{
+		position:relative;
+		right:.7em;			
+		}		
+	#sidebar .col-1{	/* col-1 & col-2 changes from 45% to 100% width and flotaing removed, which will make them appear vertically */
+		width:100%;
+		float:none;
+		margin:0 0 2em 0;
+		}
+	#sidebar .col-2{
+		width:100%;
+		float:none;
+		margin:0 0 2em 0;
+		}
+	}
+
+	
+
+		
+		
+	
+	
+	
+	
+	

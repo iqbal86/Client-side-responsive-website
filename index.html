@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">		<!--language of the element content is set to English-->
+<!--Head-->
+	<head>
+		<title>My Personal Hero</title>			<!--title of the page which will appear on the browser-->
+		<meta charset ="utf-8" />				<!--this specifies the character encoding for the HTML-->
+		<link rel ="stylesheet" href ="css/style.css" />	<!--this tag will link a document to an external css file-->
+		<meta name ="viewport" content = "initial-scale=1.0, width=device-width" />		<!--this will give the browser instruction on how to 
+																						control the page`s dimensions and scalling on different device sizes--> 
+	</head>
+<!--Body-->	
+	<body>
+		<div id ="page">	<!--page container-->
+			<header>			<!--the header has an image with heading and navigation list below -->
+				<figure>
+					<img src ="images/header1.jpg" alt="customColor" />
+				</figure>
+					<h1>Muhammad Ali<br><span>1942 - 2016</span>	<!--span is used to add a hook to a part of text which can be then styled in css-->
+					<br><span class="lastLine">Remembering The Greatest</span></h1>
+				<nav>
+					<ul>	<!--unordered list with href atribute to external html files-->
+						<li><a href="#">Home</a></li>
+						<li><a href="data/Career.html">Career</a></li>
+						<li><a href="data/work.html">Work</a></li>
+						<li><a href="data/Life.html">Personal Life</a></li>
+						<li><a href="data/Contact.html">Contact Us</a></li>
+					</ul>
+				</nav>			
+			</header>
+		
+		<div id ="content"> <!--body content with div tag-->
+			<article> <!--article with heading-->
+				<h2><a href="data/MyHero.html">My Personal Hero</a></h2>
+				<figure>
+					<a href ="data/MyHero.html"><img src ="images/mali.jpg" height="300" alt="contentPic" /></a>
+				</figure>
+				<p>I consider Muhammad Ali as my personal hero who was first known as Cassius Clay. He won his first gold medal at the Olympic Games in Rome in 1960. He stunned the boxing community in 1964 with his defeat of heavyweight champion Sonny Liston.
+				During the Vietnam war he was ordered to go and fight but he refused induction on religious grounds, he was branded a draft-dodger and was stripped of his heavyweight title.
+				Regardless of this, he never gave into the American Government and stuck to his principles. World Boxing Association suspended his boxing licence and banned him from sports <a href="data/MyHero.html">Read more..</a></p>
+			</article>
+		</div>
+<!--Aside-->		
+		<aside id ="sidebar">   <!--aside with two columns-->
+			<section class ="col-1"><a href="data/Childhood.html"> <!--the content of section is href attributed to an external file EearlyLife.html-->
+				<h3>Childhood & Eearly Life</h3> 
+				<p>Muhammad Ali was born Cassius Marcellus Clay Jr. in Louisville in January 17, 1942. He later changed his name when he was an adult. He was the first son of Odessa Grady Clay and Cassius Marcellus Clay Sr. Odessa worked as a cook and..</p></a>
+			</section>
+			
+			<section class ="col-2"><a href ="data/Awards.html"><!--the content of section is href attributed to an external file Awards.html-->
+				<h3>Awards & Achievements</h3>
+				<p>Muhammad Ali has won many awards and had many achievements.In 1959, Ali was National Golden Gloves light heavyweight champion and national amateur athletic union champion..</p></a>
+			</section>
+	    </aside>	
+<!--Footer-->		
+		<footer>	<!--footer with list and href attributed-->
+			<ul>
+				<li><a href ="data/About.html">About</a></li>
+			</ul>
+		</footer>
+	   </div>	
+	</body>		<!--end of body tag-->
+</html>			<!--end of html tag-->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">			<!--language of the element content is set to English-->
+	<head>
+		<title>Contact Us</title>		<!--title of the page which will appear on the browser-->
+		<meta charset ="utf-8" />	<!--this specifies the character encoding for the HTML-->
+		<link rel ="stylesheet" href ="../css/style.css" />	<!--this tag will link a document to an external css file-->
+		<meta name ="viewport" content = "initial-scale=1.0, width=device-width" />		<!--this will give the browser instruction on how to 
+																						control the page`s dimensions and scalling on different device sizes-->
+	</head>
+<!--Body-->		
+	<body>
+		<div class ="Contact">	<!--a class which will be called later in css for styling-->
+		<div id ="page">		<!--page container-->
+		<header></header>	
+			<nav>				<!--navigatioin bar-->
+				<ul>			<!--unordered list with href atribute to external html files-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="Life.html">Personal Life</a></li>
+					<li><a href="Awards.html">Achievements</a></li>
+					<li><a href="Childhood.html">Childhood</a></li>
+					<li><a href="MyHero.html">My Hero</a></li>
+				</ul>
+			</nav>		
+		<div id ="content">		<!--body content with div tag-->
+		<article>				<!--article with heading-->
+		<h1>Contact</h1>
+		<form>
+			<fieldset>		<!--group together related elements-->
+			<legend>Enter Your Details</legend>		<!--defines a label-->
+			First Name: <input type="text" name="firstName" value="" placeholder="Enter your first name" /><br/>	<!--single line text-->
+			Second Name: <input type="text" name="seconName" value="" placeholder="Enter you second name" /><br>	<!--single line text-->
+			
+			Gender: <input type ="radio" name="gender" value="true" checked="checked" />Male:	<!--radio button selection-->
+			<input type ="radio" name="gender" value="false" />Female:<br/>
+		
+			Email: <input type="email" name="email" placeholder="example@hotmail.com"/><br> 	<!--email input-->
+			Would you like to recieve promotion news?: <input type="checkbox" name="check" /><br> 	<!--checkbox element-->
+			</fieldset>
+			
+			<fieldset>		<!--group together related elements-->
+			<legend>Your Message</legend>	<!--defines label for grouped together elements-->		
+			<textarea rows="5" placeholder="Enter your short message here.."></textarea><br>	<!--multi lines user text input-->
+			</fieldset>
+		</form>
+		
+		<input type="submit" value="Click to submit" /> 	<!--submit type input-->	
+		</article>
+		</div>
+<!--Footer-->		
+		<footer>	<!--footer with list and href attributed-->
+			<ul>
+				<li><a href ="About.html">About</a></li>
+			</ul>
+		</footer>
+	   </div>		<!--end of page id attribute-->
+	   </div>		<!--end of Career class-->
+	</body>
+</html>	
